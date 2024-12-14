@@ -512,6 +512,7 @@ Rarity < Rare
 
 Hide
 BaseType = "Flask"
+Rarity <= Magic
 Quality < 1
 
 #xxxxxxxxxxxxx
