@@ -18,6 +18,12 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+Version 0.2.3
+
+Adjusted magic jewel colors based on feedback.
+Reduced gold pile sizes based on feedback.
+Adjusted superior item colors based on feedback.
+
 Version 0.2.2
 
 Moved silk robe to bait bases.

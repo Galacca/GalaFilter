@@ -189,12 +189,14 @@ BaseType == "Gold"
 SetTextColor 235 200 110
 SetBorderColor 235 200 110
 PlayEffect Orange Temp
+SetFontSize 25
 
 Show
 BaseType == "Gold"
 SetTextColor 235 200 110
 SetBorderColor 0 0 0 255
 SetBackgroundColor 0 0 0 180
+SetFontSize 25
 
 #--------------------------
 # Uncut Gems
@@ -303,9 +305,9 @@ PlayEffect Purple
 # Special B Tier - Any Jewels
 Show
 Class "Jewel"
-Rarity Magic
-SetTextColor 0 0 255
-SetBorderColor 0 0 255
+Rarity < Rare
+SetTextColor 100 100 200
+SetBorderColor 100 100 200
 MinimapIcon 1 Purple Square
 PlayEffect Purple Temp
 
@@ -479,20 +481,23 @@ SetFontSize 35
 Show
 Quality > 10
 Rarity Normal
-SetBorderColor 200 200 200
+SetBorderColor 128 0 64
+SetTextColor 128 0 64
 SetFontSize 35
 
 # Not working!
 Show
 Sockets > 0
 Rarity Magic
-SetBorderColor 0 0 200
+SetBorderColor 128 0 64
+SetTextColor 128 0 64
 SetFontSize 35
 
 Show
 Quality > 10
 Rarity Magic
-SetBorderColor 0 0 200
+SetBorderColor 128 0 64
+SetTextColor 128 0 64
 SetFontSize 35
 
 #xxxxxxxxxxxxx
