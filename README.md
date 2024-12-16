@@ -18,6 +18,11 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+Version 0.2.4
+
+Moved jade amulet to bait bases.
+Acolyte bows and crackling staves are no longer visible.
+
 Version 0.2.3
 
 Adjusted magic jewel colors based on feedback.

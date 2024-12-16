@@ -112,7 +112,7 @@ MinimapIcon 0 Red Star
 #Amulets
 Show
 Rarity Unique
-BaseType = "Crimson Amulet" "Jade Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+BaseType = "Crimson Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -137,7 +137,7 @@ MinimapIcon 0 Red Star
 #Contains amulets and rings currently
 Show
 Rarity Unique
-BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe"
+BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -508,10 +508,23 @@ Hide
 BaseType = "Advanced "
 Rarity < Rare
 
+#Redundant?
 Hide
 BaseType = "Flask"
 Rarity <= Magic
 Quality < 1
+
+#xxxxxxxxxxxxx
+#Uninteresting expert bases: maces, crackling staves, acolyte bows
+#xxxxxxxxxxxxx
+
+Hide
+Class "Mace"
+Rarity <= Magic
+
+Hide
+BaseType "Expert Crackling Quarterstaff" "Expert Acolyte Bow"
+Rarity <= Magic
 
 #xxxxxxxxxxxxx
 #Expert Bases
@@ -521,14 +534,6 @@ Show
 BaseType = "Expert "
 Rarity Rare
 SetBorderColor 180 180 0 255
-
-#xxxxxxxxxxxxx
-#Maces
-#xxxxxxxxxxxxx
-
-Hide
-Class "Mace"
-Rarity <= Magic
 
 Show 
 BaseType = "Expert "
@@ -596,7 +601,19 @@ Rarity Magic
 SetTextColor 0 0 255
 SetBorderColor 0 0 255
 
+#xxxxxxxxxxxxx
+#Logbooks
+#xxxxxxxxxxxxx
 
+Show 
+BaseType == "Expedition Logbook"
+SetFontSize 45
+SetTextColor 255 85 85 255
+SetBorderColor 255 85 85 255
+SetBackgroundColor 40 0 30 255
+PlayAlertSound 5 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow UpsideDownHouse
 
 #xxxxxxxxxxxxx
 #Generic hide for worthless stuff
@@ -606,12 +623,4 @@ Hide
 Rarity <= Magic
 Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
 
-Show 
-	BaseType == "Expedition Logbook"
-	SetFontSize 45
-	SetTextColor 255 85 85 255
-	SetBorderColor 255 85 85 255
-	SetBackgroundColor 40 0 30 255
-	PlayAlertSound 5 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow UpsideDownHouse
+
