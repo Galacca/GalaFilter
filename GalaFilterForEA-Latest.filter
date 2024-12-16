@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.2.2
+# VERSION:  0.2.6
 # AUTHOR:   Galaca
 # Last price check: 14.12.2024
 
@@ -112,7 +112,7 @@ MinimapIcon 0 Red Star
 #Amulets
 Show
 Rarity Unique
-BaseType = "Crimson Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+BaseType = "Gold Amulet"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -137,7 +137,7 @@ MinimapIcon 0 Red Star
 #Contains amulets and rings currently
 Show
 Rarity Unique
-BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet"
+BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet" "Solar Amulet" "Crimson Amulet" "Stellar Amulet"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -204,10 +204,22 @@ SetFontSize 25
 
 Hide
 BaseType "Uncut Support Gem"
+ItemLevel < 4
 
 Show
-BaseType "Uncut Skill Gem"
-#GemLevel >= 16
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel 20
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+Show
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel 19
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 #PlayAlertSound 2 300
@@ -215,15 +227,47 @@ PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 
 Show
-BaseType "Uncut Spirit Gem"
-#GemLevel >= 16
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel 18
+AreaLevel < 78
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 #PlayAlertSound 2 300
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 
+Show
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel 17
+AreaLevel < 74
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
 
+Show
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel 16
+AreaLevel < 70
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+Hide
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+ItemLevel < 19
+
+Show
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+#ItemLevel >= 16
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
 
 #xxxxxxxxxxxxx
 # Greater Essence Overrides
@@ -464,8 +508,6 @@ Class "Rings" "Amulets" "Belts"
 Rarity Magic
 SetTextColor 62 72 204
 SetBorderColor 62 72 204
-
-
 
 #--------------------------
 # Salvagable Items

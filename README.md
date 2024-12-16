@@ -18,6 +18,11 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+Version 0.3.6
+Uncut level 20 gem classified as big loot
+Uncut gems filtered out based on area level
+Moved solar amulet, stellar and crimson amulet to bait base
+
 Version 0.2.5
 Fixed erronous naming. Acolyte bow -> cultist bow
 Version 0.2.4
