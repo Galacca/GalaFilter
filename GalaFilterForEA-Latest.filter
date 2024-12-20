@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.3.6
+# VERSION:  0.3.7
 # AUTHOR:   Galaca
 # Last price check: 20.12.2024
 
@@ -487,6 +487,14 @@ MinimapIcon 1 Yellow Diamond
 #--------------------------
 # Rings, Amulets, Belts
 #--------------------------
+
+#Chance bases
+Show
+BaseType "Heavy Belt" "Emerald Ring" "Stellar Amulet"
+Rarity Normal
+SetTextColor 255 255 255
+SetBorderColor 255 207 132
+SetBackgroundColor 255 255 255 50
 
 Show
 Rarity Normal
