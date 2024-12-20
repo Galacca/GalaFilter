@@ -1,9 +1,9 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.2.6
+# VERSION:  0.3.6
 # AUTHOR:   Galaca
-# Last price check: 14.12.2024
+# Last price check: 20.12.2024
 
 #--------------------------
 # Overrides - Uniques, Valuables
@@ -16,7 +16,7 @@
 #Belts
 Show
 Rarity Unique
-BaseType "Heavy Belt" "Ornate Belt" "Utility Belt"
+BaseType "Ornate Belt" "Utility Belt"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -28,7 +28,7 @@ MinimapIcon 0 Red Star
 #Body Armour
 Show
 Rarity Unique
-BaseType "Conqueror Plate" "Grand Regalia" "Garment" "Linen Wraps" "Knight Armour" "Altar Robe" "Smuggler Coat"
+BaseType "Conqueror Plate" "Grand Regalia" "Knight Armour" "Altar Robe" "Smuggler Coat"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -40,19 +40,7 @@ MinimapIcon 0 Red Star
 #Shield
 Show
 Rarity Unique
-BaseType "Crucible Tower Shield" "Stone Tower Shield" "Hunting Shoes" "Velour Shoes" "Lattice Sandals" "Linen Wraps"
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
-PlayEffect Red
-MinimapIcon 0 Red Star
-
-#Boots
-Show
-Rarity Unique
-BaseType "Hunting Shoes" "Velour Shoes" "Lattice Sandals" "Linen Wraps"
+BaseType "Crucible Tower Shield" "Stone Tower Shield"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -64,7 +52,7 @@ MinimapIcon 0 Red Star
 #Gloves
 Show
 Rarity Unique
-BaseType "Linen Wraps" "Gauze Wraps" "Burnished Gauntlets" "Moulded Mitts"
+BaseType "Burnished Gauntlets"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -76,7 +64,7 @@ MinimapIcon 0 Red Star
 #Helmets
 Show
 Rarity Unique
-BaseType "Tribal Mask" "Heavy Crown" "Closed Helm" "Chain Tiara" "Armoured Cap" "Felt Cap"
+BaseType "Closed Helm" "Armoured Cap" "Felt Cap"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -100,7 +88,7 @@ MinimapIcon 0 Red Star
 #Relics
 Show
 Rarity Unique
-Class "Relic"
+BaseType "Vase Relic" "Incense Relic"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -137,7 +125,7 @@ MinimapIcon 0 Red Star
 #Contains amulets and rings currently
 Show
 Rarity Unique
-BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet" "Solar Amulet" "Crimson Amulet" "Stellar Amulet"
+BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet" "Solar Amulet" "Crimson Amulet" "Stellar Amulet" "Linen Wraps" "Heavy Belt" "Tribal Mask" "Chain Tiara"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -148,7 +136,7 @@ SetFontSize 40
 
 Show
 Rarity Unique
-BaseType = "Ultimate Life Flask"
+BaseType = "Ultimate Life Flask" "Ultimate Mana Flask"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -275,7 +263,7 @@ MinimapIcon 1 Cyan Triangle
 #xxxxxxxxxxxxx
 
 Show
-BaseType "Greater Essence "
+BaseType "Greater Essence of Torment" "Greater Essence of Sorcery" "Greater Essence of Haste"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -283,6 +271,17 @@ SetBackgroundColor 255 255 255 255
 PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
+
+# Styled like ~10 ex drops
+Show
+BaseType "Greater Essence "
+SetFontSize 40
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Circle
 
 #xxxxxxxxxxxxx
 # Soul Core Overrides
