@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.3.7
+# VERSION:  0.3.8
 # AUTHOR:   Galaca
 # Last price check: 20.12.2024
 
@@ -521,33 +521,33 @@ SetBorderColor 62 72 204
 #--------------------------
 
 # Not working!
-Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
-
-Show
-Quality > 10
-Rarity Normal
-SetBorderColor 128 0 64
-SetTextColor 128 0 64
-SetFontSize 35
+#Show
+#Sockets > 0
+#Rarity Normal
+#SetBorderColor 200 200 200
+#SetFontSize 35
 
 # Not working!
-Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 128 0 64
-SetTextColor 128 0 64
-SetFontSize 35
+#Show
+#Sockets > 0
+#Rarity Magic
+#SetBorderColor 128 0 64
+#SetTextColor 128 0 64
+#SetFontSize 35
 
 Show
 Quality > 10
+Class "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+Rarity Normal
+SetBorderColor 128 0 64
+SetTextColor 128 0 64
+
+Show
+Quality > 10
+Class "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
 Rarity Magic
 SetBorderColor 128 0 64
 SetTextColor 128 0 64
-SetFontSize 35
 
 #xxxxxxxxxxxxx
 #Hide some more useless stuff like adv bases and qualityless flasks
@@ -671,5 +671,3 @@ MinimapIcon 1 Yellow UpsideDownHouse
 Hide
 Rarity <= Magic
 Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
-
-

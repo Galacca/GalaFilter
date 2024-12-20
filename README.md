@@ -18,6 +18,9 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+# Version 0.3.8
+Stricter filtering for quality and socketed items
+
 # Version 0.3.7
 Added chance bases due to feedback
 
