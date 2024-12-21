@@ -638,6 +638,7 @@ SetBackgroundColor 240 90 35 150
 
 Show
 BaseType "Expert "
+ItemLevel >= 82
 Rarity Rare
 SetTextColor 233 206 75
 SetBorderColor 233 206 75
