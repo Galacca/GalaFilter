@@ -18,6 +18,10 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+# Version 0.4.8
+Made 82+ bases pop out more due to feedback
+Made the filter a bit easier to read (hopefully)
+
 # Version 0.3.8
 Stricter filtering for quality and socketed items
 

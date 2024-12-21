@@ -1,17 +1,15 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.3.8
+# VERSION:  0.4.8
 # AUTHOR:   Galaca
 # Last price check: 20.12.2024
 
-#--------------------------
-# Overrides - Uniques, Valuables
-#--------------------------
-#xxxxxxxxxxxxx
-# High value Unique Overrides
-# Styled like high value currency
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   High value items and currency
+#
+#----------------------------------------------------------------------------------------------------------
 
 #Belts
 Show
@@ -121,19 +119,6 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
-#BAITS two or more unique types that can be valuable or worthless
-#Contains amulets and rings currently
-Show
-Rarity Unique
-BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet" "Solar Amulet" "Crimson Amulet" "Stellar Amulet" "Linen Wraps" "Heavy Belt" "Tribal Mask" "Chain Tiara"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 1 White Circle
-SetFontSize 40
-
 Show
 Rarity Unique
 BaseType = "Ultimate Life Flask" "Ultimate Mana Flask"
@@ -167,9 +152,29 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
-#--------------------------
-# Gold
-#--------------------------
+
+#----------------------------------------------------------------------------------------------------------
+#
+#   BAITS. Base type contains two or more uniques out of which one or more are worthless
+#
+#----------------------------------------------------------------------------------------------------------
+
+Show
+Rarity Unique
+BaseType "Azure Amulet" "Amber Amulet" "Lapis Amulet" "Lazuli Ring" "Sapphire Ring" "Topaz Ring" "Pearl Ring" "Gold Ring" "Silk Robe" "Jade Amulet" "Solar Amulet" "Crimson Amulet" "Stellar Amulet" "Linen Wraps" "Heavy Belt" "Tribal Mask" "Chain Tiara"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 40
+
+#----------------------------------------------------------------------------------------------------------
+#
+#   Gold
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
 StackSize >= 500
@@ -186,9 +191,11 @@ SetBorderColor 0 0 0 255
 SetBackgroundColor 0 0 0 180
 SetFontSize 25
 
-#--------------------------
-# Uncut Gems
-#--------------------------
+#----------------------------------------------------------------------------------------------------------
+#
+#   Uncut Gems
+#
+#----------------------------------------------------------------------------------------------------------
 
 Hide
 BaseType "Uncut Support Gem"
@@ -257,10 +264,11 @@ SetBorderColor 20 240 240
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 
-#xxxxxxxxxxxxx
-# Greater Essence Overrides
-# Styled like high value currency
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+# 
+#   Greater Essences
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
 BaseType "Greater Essence of Torment" "Greater Essence of Sorcery" "Greater Essence of Haste"
@@ -283,10 +291,11 @@ PlayAlertSound 2 300
 PlayEffect White
 MinimapIcon 1 White Circle
 
-#xxxxxxxxxxxxx
-# Soul Core Overrides
-# Styled like high value currency
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   High value Soul Cores
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
 BaseType "Soul Core of Zalatl" "Soul Core of Citaqualotl" "Soul Core of Azcapa"
@@ -298,10 +307,11 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
-#xxxxxxxxxxxxx
-# Distilled Stuff Override
-# Styled like high value currency
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   High value distills
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
 Class "Currency"
@@ -314,9 +324,11 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
-#--------------------------
-# Socketables and Special Character Equipment
-#--------------------------
+#----------------------------------------------------------------------------------------------------------
+#
+#   Soul cores, sanctum relics, charms, jewels
+#
+#----------------------------------------------------------------------------------------------------------
 
 # Special A Tier - League specific socketables and jewels
 Show 
@@ -360,9 +372,11 @@ BaseType " Rune" " Charm"
 SetTextColor 0 240 190
 PlayEffect Purple Temp
 
-#--------------------------
-# Socketables and Special Character Equipment
-#--------------------------
+#----------------------------------------------------------------------------------------------------------
+#
+#   Socketables and Special Character Equipment
+#
+#----------------------------------------------------------------------------------------------------------
 
 # Currency Tier A: Gemcutter, Annullment
 Show
@@ -452,7 +466,6 @@ SetFontSize 40
 Show
 BaseType "Waystone"
 WaystoneTier < 10
-#Rarity <= Rare
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 PlayAlertSound 4 300
@@ -463,7 +476,6 @@ SetFontSize 35
 Show
 BaseType "Waystone"
 WaystoneTier >= 10
-#Rarity <= Rare
 SetTextColor 255 174 201
 SetBorderColor 255 174 201
 PlayAlertSound 4 300
@@ -471,24 +483,56 @@ PlayEffect Red
 MinimapIcon 1 Red Square
 SetFontSize 40
 
-#--------------------------
-# Value Rares
-#--------------------------
+#----------------------------------------------------------------------------------------------------------
+#
+#   Rare jewelry
+#
+#----------------------------------------------------------------------------------------------------------
+
+#   82+
+Show
+Class "Rings" "Amulets" "Belts"
+ItemLevel >= 82
+Rarity Rare
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+SetBackgroundColor 240 90 35 150
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
 
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Rare
 SetTextColor 233 206 75
 SetBorderColor 233 206 75
-#SetBackgroundColor 200 200 200
 PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
-#--------------------------
-# Rings, Amulets, Belts
-#--------------------------
+#----------------------------------------------------------------------------------------------------------
+#
+#   Rings, Amulets, Belts - NON RARE
+#
+#----------------------------------------------------------------------------------------------------------
 
-#Chance bases
+#   82+
+Show
+Class "Rings" "Amulets" "Belts"
+ItemLevel >= 82
+Rarity Normal
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 240 90 35 150
+
+#   82+
+Show
+Class "Rings" "Amulets" "Belts"
+ItemLevel >= 82
+Rarity Magic
+SetTextColor 0 0 200
+SetBorderColor 0 0 200
+SetBackgroundColor 240 90 35 150
+
+#   Chance bases
 Show
 BaseType "Heavy Belt" "Emerald Ring" "Stellar Amulet"
 Rarity Normal
@@ -516,24 +560,11 @@ Rarity Magic
 SetTextColor 62 72 204
 SetBorderColor 62 72 204
 
-#--------------------------
-# Salvagable Items
-#--------------------------
-
-# Not working!
-#Show
-#Sockets > 0
-#Rarity Normal
-#SetBorderColor 200 200 200
-#SetFontSize 35
-
-# Not working!
-#Show
-#Sockets > 0
-#Rarity Magic
-#SetBorderColor 128 0 64
-#SetTextColor 128 0 64
-#SetFontSize 35
+#----------------------------------------------------------------------------------------------------------
+#
+#   Salvagable Items
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
 Quality > 10
@@ -549,9 +580,11 @@ Rarity Magic
 SetBorderColor 128 0 64
 SetTextColor 128 0 64
 
-#xxxxxxxxxxxxx
-#Hide some more useless stuff like adv bases and qualityless flasks
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Hide some unwanted items such as advanced bases and qualityless flasks
+#
+#----------------------------------------------------------------------------------------------------------
 
 Hide
 BaseType = "Advanced "
@@ -563,9 +596,11 @@ BaseType = "Flask"
 Rarity <= Magic
 Quality < 1
 
-#xxxxxxxxxxxxx
-#Uninteresting expert bases: maces, crackling staves, acolyte bows
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Uninteresting expert bases: maces, lightning staves, chaos bows
+#
+#----------------------------------------------------------------------------------------------------------
 
 Hide
 Class "Mace"
@@ -575,9 +610,44 @@ Hide
 BaseType "Expert Crackling Quarterstaff" "Expert Cultist Bow"
 Rarity <= Magic
 
-#xxxxxxxxxxxxx
-#Expert Bases
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Expert Bases
+#
+#----------------------------------------------------------------------------------------------------------
+
+    #xxxxxxxxxxxxx
+    #   82+ expert base override BEGINS
+    #xxxxxxxxxxxxx
+
+Show
+BaseType "Expert "
+ItemLevel >= 82
+Rarity Normal
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 240 90 35 150
+
+Show
+BaseType "Expert "
+ItemLevel >= 82
+Rarity Magic
+SetTextColor 0 0 200
+SetBorderColor 0 0 200
+SetBackgroundColor 240 90 35 150
+
+Show
+BaseType "Expert "
+Rarity Rare
+SetTextColor 233 206 75
+SetBorderColor 233 206 75
+SetBackgroundColor 240 90 35 150
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+    #xxxxxxxxxxxxx
+    #   82+ expert base override ENDS
+    #xxxxxxxxxxxxx
 
 Show
 BaseType = "Expert "
@@ -596,63 +666,35 @@ Rarity Normal
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
 
-#xxxxxxxxxxxxx
-#Wands
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Wands, sceptres and staves
+#        NOTE: needs its own block since they do not have "Expert ... " variation
+#        NOTE: they get NO EXTRA ROLLS at 82+
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show
-Class "Wand"
+Class "Wand" "Sceptre" "Staff"
 ItemLevel >= 81
 Rarity Normal
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
+SetBackgroundColor 240 90 35 150
 
 Show
-Class "Wand"
+Class "Wand" "Sceptre" "Staff"
 ItemLevel >= 81
 Rarity Magic
-SetTextColor 0 0 255
-SetBorderColor 0 0 255
+SetTextColor 0 0 200
+SetBorderColor 0 0 200
+SetBackgroundColor 240 90 35 150
 
-#xxxxxxxxxxxxx
-#Sceptre
-#xxxxxxxxxxxxx
-
-Show
-Class "Sceptre"
-ItemLevel >= 81
-Rarity Normal
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-
-Show
-Class "Sceptre"
-ItemLevel >= 81
-Rarity Magic
-SetTextColor 0 0 255
-SetBorderColor 0 0 255
-
-#xxxxxxxxxxxxx
-#Staff
-#xxxxxxxxxxxxx
-
-Show
-Class "Staff"
-ItemLevel >= 81
-Rarity Normal
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-
-Show
-Class "Staff"
-ItemLevel >= 81
-Rarity Magic
-SetTextColor 0 0 255
-SetBorderColor 0 0 255
-
-#xxxxxxxxxxxxx
-#Logbooks
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Logbooks
+#
+#----------------------------------------------------------------------------------------------------------
 
 Show 
 BaseType == "Expedition Logbook"
@@ -664,9 +706,11 @@ PlayAlertSound 5 300
 PlayEffect Yellow
 MinimapIcon 1 Yellow UpsideDownHouse
 
-#xxxxxxxxxxxxx
-#Generic hide for worthless stuff
-#xxxxxxxxxxxxx
+#----------------------------------------------------------------------------------------------------------
+#
+#   Generic hide for worthless stuff
+#
+#----------------------------------------------------------------------------------------------------------
 
 Hide
 Rarity <= Magic
