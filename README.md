@@ -18,6 +18,9 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+# Version 0.5.11
+Added all advanced rare ar/es shield bases to be visible due to feedback.  
+
 # Version 0.5.10
 Fixed rare quivers being filtered too strictly.  
 (STRICT) filtered out ultimatums  

@@ -1,3 +1,6 @@
+# Version 0.1.2 
+- Confer to base filter version rule on advanced ar/es shields
+
 # Version 0.1.1 - Differences to regular version
 - Hid all ultimatums
 

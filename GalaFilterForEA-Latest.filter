@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Galaca's filter for Path of Exile 2 - Based off of Neversink's 0.1.1
 #===============================================================================================================
-# VERSION:  0.5.9
+# VERSION:  0.5.11
 # AUTHOR:   Galaca
 # Last price check: 20.12.2024
 
@@ -739,6 +739,17 @@ SetBackgroundColor 240 90 35 150
 
 Show
 BaseType "Primed Quiver" "Visceral Quiver"
+Rarity Rare
+SetBorderColor 180 180 0 255
+
+#----------------------------------------------------------------------------------------------------------
+#
+#   Shields
+#
+#----------------------------------------------------------------------------------------------------------
+
+Show
+BaseType "Advanced Omen Crest Shield" "Advanced Sectarian Crest Shield" "Advanced Jingling Crest Shield" "Advanced Emblem Crest Shield" "Advanced Sigil Crest Shield" "Advanced Blazon Crest Shield"
 Rarity Rare
 SetBorderColor 180 180 0 255
 
