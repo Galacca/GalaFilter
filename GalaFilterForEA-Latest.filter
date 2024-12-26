@@ -739,7 +739,6 @@ SetBackgroundColor 240 90 35 150
 
 Show
 BaseType "Primed Quiver" "Visceral Quiver"
-ItemLevel >= 81
 Rarity Rare
 SetBorderColor 180 180 0 255
 

@@ -18,6 +18,10 @@ Highlights all cores.
 Attempts to have a consistant color theme.
 Attempts to have minimal minimap clutter.
 
+# Version 0.5.10
+Fixed rare quivers being filtered too strictly.  
+(STRICT) filtered out ultimatums  
+
 # Version 0.5.9
 A strict version is now available. Check Strict.md for specific notes on that.  
 Added quivers (crit and ias base only) to be visible.  
